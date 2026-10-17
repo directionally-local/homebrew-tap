@@ -1,0 +1,32 @@
+name: Update Autopilot formula
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Update formula from npm
+        run: node scripts/update-formula.mjs
+      - name: Open formula update pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: automation/update-autopilot-formula
+          delete-branch: true
+          title: "chore: update Autopilot Homebrew formula"
+          commit-message: "chore: update Autopilot Homebrew formula"
+          body: |
+            Automated formula update from the latest stable `autopilot-ai` package on npm.
+
+            Review the pinned npm tarball version and SHA-256 checksum before merging.
