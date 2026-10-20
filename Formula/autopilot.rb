@@ -1,8 +1,8 @@
 class Autopilot < Formula
   desc "Terminal coding agent for OpenRouter models"
   homepage "https://github.com/sinameraji/autopilot"
-  url "https://registry.npmjs.org/autopilot-ai/-/autopilot-ai-1.24.1.tgz"
-  sha256 "46595b1bcba5850f99bcd3f511b3285ed6a816b3c29ecf8f5b0d5e4e0613211a"
+  url "https://registry.npmjs.org/autopilot-ai/-/autopilot-ai-1.30.0.tgz"
+  sha256 "e6e08ad4719c3690adf98264ed60b5945977d8800fd6af63fc71ee0c69d6efb6"
   license "MIT"
 
   depends_on "node@22"
