@@ -3,7 +3,7 @@
 Install Autopilot with Homebrew on macOS or Linux:
 
 ```sh
-brew install sinameraji/tap/autopilot
+brew install directionally-local/tap/autopilot
 autopilot
 ```
 
