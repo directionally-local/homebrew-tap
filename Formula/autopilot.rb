@@ -1,8 +1,8 @@
 class Autopilot < Formula
   desc "Terminal coding agent for any model provider, with your own key"
   homepage "https://github.com/directionally-local/autopilot"
-  url "https://registry.npmjs.org/autopilot-ai/-/autopilot-ai-3.13.0.tgz"
-  sha256 "d3a982b465e7098ef2ee6afa036c4497e9786a3a7ac224672e35f10b59cf948d"
+  url "https://registry.npmjs.org/autopilot-ai/-/autopilot-ai-3.14.0.tgz"
+  sha256 "f2ab725fb664a84699ebfca0b0fbf03ce33b713ab6e7883f882a5bd6eba14165"
   license "MIT"
 
   depends_on "node@22"
